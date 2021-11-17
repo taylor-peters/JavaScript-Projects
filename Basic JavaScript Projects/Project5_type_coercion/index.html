@@ -1,37 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./main.js"></script>
+    <script src="./JS/main.js"></script>
     <title>Document</title>
+    <style>
+        p {
+            font-variant-caps: small-caps;
+            letter-spacing: 2px;
+            color: blue;
+        }
+    </style>
 </head>
+
 <body>
     
-    <script>document.write(typeof("10"))</script>
+    <p>Type of Function</p>
+    <script>document.write(typeof ("10"))</script><br>  <!-- Returns type of data -->
+
+    <p>Type Coercion</p>
+    <script>document.write(5 + "10")</script><br>   <!-- Forces concatenation of data -->
+
+    <p>Boolean 1</p>
+    <script>document.write(5 > 10)</script><br> <!-- Evaluates logical expression, returns true or false -->
+
+    <p>Boolean 2</p>
+    <script>document.write(5 < 10)</script><br>
+
+    <p>Boolean 3</p>
+    <script>document.write(5 < 5)</script><br>
+
+    <p>Double Equals</p>
+    <script>document.write(5 == 10)</script><br>
+
+    <p>Triple Equals 1</p>
+    <script>document.write(5 === 5)</script><br>
     
-    <script>document.write(5 + "10")</script>
+    <p>Triple Equals 2</p>
+    <script>document.write(5 === "7")</script><br>  <!-- Compares data and data type, returns true or false -->
 
-    <script>document.write(5 > 10)</script>
+    <p>Triple Equals 3</p>
+    <script>document.write(5 == "5")</script><br>
 
-    <script>document.write(5 < 10)</script>
+    <p>Triple Equals 4</p>
+    <script>document.write(5 == 7)</script><br>
 
-    <script>console.log(5 < 5)</script>
+    <p>Logical Operators 1</p>
+    <script>document.write(5 > 2 && 3 < 2)</script><br> <!-- AND logical expression -->
 
-    <p id="Test" onclick="my_Function()">Click here!</p>
+    <p>Logical Operators 2</p>
+    <script>document.write(5 > 2 || 3 < 4)</script><br> <!-- OR logical expression -->
 
-    <p id="Test2" onclick="my_Function2()">Click here!</p>
+    <p>Logical Operators 3</p>
+    <script>document.write(5 > 2 || 3 < 4)</script><br>
 
-    <p id="Test3" onclick="my_Function3()">Click here!</p>
+    <p>Logical Operators 4</p>
+    <script>document.write(5 > 2 || 3 < 4)</script><br>
 
-    <p id="Test4" onclick="my_Function4()">Click here!</p>
+    <p>Logical Operators 5</p>
+    <script>document.write(3 != 4)</script><br>  <!-- NOT logical expression -->
 
-    <p id="Test5" onclick="my_Function5()">Click here!</p>
+    <p>Logical Operators 5</p>
+    <script>document.write(3 != 3)</script><br><br>
 
-    <p id="Test6" onclick="my_Function6()">Click here!</p>
+    <button id="Test" onclick="my_Function()">Not A Number Function</button><br>
 
-    
+    <button id="Test2" onclick="my_Function2()">Not A Number Check</button><br>
+
+    <button id="Test3" onclick="my_Function3()">Not A Number Check #2</button><br>
+
+    <button id="Test4" onclick="my_Function4()">Infinity Function</button><br>
+
+    <button id="Test5" onclick="my_Function5()">Negative Infinity Function</button><br>
+
+
 
 </body>
+
 </html>
