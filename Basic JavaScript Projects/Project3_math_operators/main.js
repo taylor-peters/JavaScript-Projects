@@ -24,3 +24,14 @@ function mathOperation5() {
     var x = Math.round((Math.random() * 100));  //generates random number and rounds to nearest integer
     document.getElementById("Math5").innerHTML = x;
 }
+
+function my_Dictionary() {
+    var Animal = {
+        Species: "Dog",
+        Color: "Black",
+        Breed: "Labrador",
+        Age: 5,
+        Sound: "Bark!"
+    };
+    document.getElementById("Dictionary").innerHTML = Animal.Sound;
+}
