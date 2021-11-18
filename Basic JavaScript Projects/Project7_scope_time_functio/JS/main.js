@@ -1,22 +1,22 @@
-var x = 10;
+var x = 10;  //establish global variable
 
 function firstFunction() {
     var y = 5;
-    document.getElementById("first").innerHTML = y + x;
+    document.getElementById("first").innerHTML = y + x;  //adds local and global variables
 }
 
 function secondFunction() {
-    document.getElementById("second").innerHTML = y + x;
+    document.getElementById("second").innerHTML = y + x;  //attempts to add globabl variable with private variable
 }
 
 function get_Date() {
     if (new Date().getHours() < 18) {
         document.getElementById("Greeting").innerHTML = "How are you today?";
-        document.getElementById("holder").innerHTML = Date();
+        document.getElementById("holder").innerHTML = Date();  //printed date to ensure functionality 
     }
 }
 
-function thirdFunction() {
+function thirdFunction() {  //compares local variable with if statement
     var y = 5;
     if (y == 5) {
         document.getElementById("third").innerHTML = "Same";
@@ -32,7 +32,7 @@ function fourthFunction() {
     else { document.getElementById("fourth").innerHTML = "Not Same"; }
 }
 
-function Time_function() {
+function Time_function() {  //grabs current time, returns reply based on time of day
     var Time = new Date().getHours();
     var Reply;
     if (Time < 12 == Time > 0) {
