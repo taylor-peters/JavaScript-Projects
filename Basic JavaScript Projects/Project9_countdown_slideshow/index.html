@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <title>Countdown Slideshow</title>
+</head>
+<body>
+
+<div>
+    <h1>Slideshow</h1>
+</div>
+    
+<div class="slideshow-container">
+    <div class="mySlides trim fade block ">
+        <div class="numbertext">1 / 5</div>
+        <img src="./Images/img_1.png" style="width:100%">
+        <div class="text">Crater Lake</div>
+    </div>
+
+    <div class="mySlides trim fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="./Images/img_2.png" style="width: 100%;">
+        <div class="text">Denali</div>
+    </div>
+
+    <div class="mySlides trim fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="./Images/img_3.png" style="width: 100%;">
+        <div class="text">Glacier Bay</div>
+    </div>
+
+    <div class="mySlides trim fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="./Images/img_4.png" style="width: 100%;">
+        <div class="text">Olympic</div>
+    </div>
+
+    <div class="mySlides trim fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="./Images/img_5.png" style="width: 100%;">
+        <div class="text">Redwoods</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div> 
+<br>
+
+<div style="text-align: center;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+</div><br><br>
+
+<div class="countdown">
+    <h1>Countdown</h1>
+    <p>How many seconds would you like to set your alarm for?</p>
+    <input id="seconds" value="" />
+    <button onclick="countdown()">Begin Countdown</button>
+    <p id="timer"></p>
+</div>
+
+</body>
+</html>
