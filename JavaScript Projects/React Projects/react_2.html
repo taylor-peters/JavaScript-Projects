@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <srcipt src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></srcipt>
+    <srcipt src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></srcipt>
+    <title>React 2 Assignment</title>
+</head>
+<body>
+
+<div id="like_button_container"></div>
+
+<script>
+    const X = React.createElement;
+
+    class likeButton extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = { liked: false };
+        }
+
+        render() {
+            if (this.state.liked) {
+                return 'You clicked the like button!';
+            }
+
+            return X (
+                'button',
+                { onClick: () => this.setState ({ liked: true}) },
+                'Like'
+            );
+        }
+    }
+
+    const domContainer = document.querySelector('#like_button_container');
+    ReactDOM.render(x(likeButton), domContainer);
+</script>
+    
+</body>
+</html>
