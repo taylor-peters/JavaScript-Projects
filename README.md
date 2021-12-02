@@ -12,11 +12,11 @@ Working calculator with display screen and functioning number and operator butto
 
 Very simple online ordering form that updates order and cost depending on user input with checkboxs and radios.
 
-###[Portfolio Website](https://taylor-peters.github.io/)
+### [Portfolio Website](https://taylor-peters.github.io/)
 
 Part of an ongoing project, beginning with HTML & CSS, now has added JavaScript functionality. 
 
-## Description
+## Project Releases
 
 - No Documents Uploaded - 11/15/21
 - Three Projects Updated - 12/2/21
